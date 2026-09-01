@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="../_ds/organic-7e5be4dd-1753-40d9-bd4b-db30c25f02c8/styles.css" />
+<script src="../_ds/organic-7e5be4dd-1753-40d9-bd4b-db30c25f02c8/_ds_bundle.js"></script>
+<style>
+  /* Brief palette expressed as Organic tokens */
+  :root {
+    --color-bg: #FFFBF3;
+    --color-surface: #F3D9C4;
+    --color-text: #2E2438;
+    --color-accent: #F2B705;
+    --color-accent-2: #7A9A76;
+    --color-accent-100: #FFF7DE; --color-accent-200: #FDECB6; --color-accent-300: #F9DA7C;
+    --color-accent-400: #F2C63E; --color-accent-500: #F2B705; --color-accent-600: #D19C04;
+    --color-accent-700: #8C6A02; --color-accent-800: #6A5001; --color-accent-900: #453400;
+    --color-accent-2-100: #EFF5EC; --color-accent-2-200: #E7F0DF; --color-accent-2-300: #C9DCC2;
+    --color-accent-2-400: #A3C09B; --color-accent-2-500: #7A9A76; --color-accent-2-600: #62805F;
+    --color-accent-2-700: #4A6247; --color-accent-2-800: #35462F; --color-accent-2-900: #202B1D;
+    --color-neutral-100: #FFFFFF; --color-neutral-200: #F6EFE4; --color-neutral-300: #E4DAD0;
+    --color-neutral-600: #8C8194; --color-neutral-700: #5C5266; --color-neutral-800: #453D4E;
+  }
+  a { color: var(--color-accent-700); }
+  a:hover { color: var(--color-text); }
+  .btn-primary { color: var(--color-text); font-weight: 700; }
+  .btn-primary:hover { background: var(--color-accent-600); }
+</style>
+<title>Plim — sua manhã começa organizada</title>
+<meta name="description" content="A Plim é uma assistente pessoal que conversa com você no WhatsApp. Toda manhã ela manda seus compromissos do dia, a previsão do tempo e os lembretes que você pediu." />
+<meta property="og:title" content="Plim — sua manhã começa organizada" />
+<meta property="og:description" content="Uma assistente pessoal no WhatsApp. Sem baixar app, sem criar senha." />
+<meta property="og:type" content="website" />
+<!-- SLOT: meta tag de verificação do Google Search Console — o time cola o valor aqui -->
+<!-- <meta name="google-site-verification" content="COLE_O_VALOR_AQUI" /> -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&amp;family=Figtree:wght@400;600;700&amp;display=swap" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { -webkit-font-smoothing: antialiased; }
+  summary::-webkit-details-marker { display: none; }
+  details[open] .plim-chev { transform: rotate(180deg); }
+  @keyframes plimUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .plim-bubble { animation: none !important; opacity: 1 !important; } }
+</style>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#FFFBF3"/><circle cx="100" cy="100" r="58" fill="#F2B705"/><text x="100" y="122" text-anchor="middle" font-family="Georgia,serif" font-size="56" fill="#2E2438">p</text></svg></template>
+</helmet>
+
+<div style="font-size: 17px; line-height: 1.6;">
+
+  <header style="position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--color-bg) 92%, transparent); backdrop-filter: blur(8px);">
+    <div class="nav" style="max-width: 1120px; margin: 0 auto;">
+      <a class="nav-brand" href="./index.html" style="font-size: 26px; color: var(--color-text); text-decoration: none;">plim</a>
+      <a class="btn btn-primary" href="{{ waLink }}" target="_blank" rel="noopener" style="min-height: 44px; padding-inline: var(--space-4); font-size: 15px;">Conversar com a Plim</a>
+    </div>
+  </header>
+
+  <main>
+    <section style="max-width: 1120px; margin: 0 auto; padding: 44px 20px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center;">
+      <div style="max-width: 560px;">
+        <h1 style="font-family: 'Caprasimo', serif; font-weight: 400; font-size: clamp(38px, 8vw, 62px); line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 20px;">Sua manhã começa organizada.</h1>
+        <p style="font-size: clamp(18px, 4.4vw, 21px); color: var(--color-text); margin: 0 0 28px; max-width: 33em; text-wrap: pretty;">A Plim é uma assistente pessoal que conversa com você no WhatsApp. Toda manhã ela manda seus compromissos do dia, a previsão do tempo e os lembretes que você pediu.</p>
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
+          <a class="btn btn-primary elev-md" href="{{ waLink }}" target="_blank" rel="noopener" style="min-height: 52px; padding-inline: var(--space-6); font-size: 18px;">Conversar com a Plim</a>
+          <p style="margin: 0; color: var(--color-neutral-600); font-size: 16px;">Sem baixar app, sem criar senha. É no WhatsApp que você já usa.</p>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; position: relative;">
+        <div style="position: absolute; width: 340px; height: 340px; border-radius: 999px; background: var(--color-surface); top: 40px; left: 50%; transform: translateX(-50%); filter: blur(2px);"></div>
+        <div style="position: relative; width: 330px; max-width: 100%; background: var(--color-text); border-radius: 48px; padding: 11px; box-shadow: var(--shadow-lg), inset 0 0 0 1px #ffffff22;">
+          <div style="background: var(--color-neutral-300); border-radius: 38px; overflow: hidden; display: flex; flex-direction: column; height: 604px;">
+
+            <div style="background: var(--color-neutral-200); padding: 10px 14px 10px 12px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);">
+              <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <div style="width: 100%; display: flex; justify-content: center; margin-bottom: 8px;">
+                  <div style="width: 76px; height: 22px; border-radius: 999px; background: var(--color-text);"></div>
+                </div>
+                <div style="width: 100%; display: flex; align-items: center; gap: 10px;">
+                  <span style="color: var(--color-neutral-600); font-size: 20px; line-height: 1;">‹</span>
+                  <div style="flex: none; width: 34px; height: 34px; border-radius: 999px; background: var(--color-accent); display: grid; place-items: center; font-family: 'Caprasimo', serif; font-size: 16px; color: var(--color-text);">p</div>
+                  <div style="min-width: 0;">
+                    <div style="font-weight: 700; font-size: 15px; line-height: 1.2;">Plim</div>
+                    <div style="font-size: 12px; color: var(--color-accent-2); font-weight: 600;">online</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex: 1; padding: 16px 12px; display: flex; flex-direction: column; gap: 10px; overflow: hidden;">
+              <div style="align-self: center; background: color-mix(in srgb, var(--color-text) 8%, transparent); color: var(--color-neutral-700); font-size: 11.5px; font-weight: 600; padding: 4px 12px; border-radius: 999px;">HOJE</div>
+              <div class="plim-bubble" style="animation: plimUp 520ms ease-out both; background: var(--color-bg); border-radius: 18px 18px 18px 5px; padding: 11px 13px; align-self: flex-start; max-width: 90%; box-shadow: var(--shadow-sm);">
+                <div style="font-size: 14.5px; line-height: 1.5;">Bom dia! ☀️ Hoje você tem:<br />• 10h — Reunião com o time<br />• 15h30 — Dentista<br />Tempo: 24°, pode chover à tarde<br />E não esquece de levar o contrato.</div>
+                <div style="font-size: 10.5px; color: var(--color-neutral-600); text-align: right; margin-top: 4px;">7:02</div>
+              </div>
+              <div class="plim-bubble" style="animation: plimUp 520ms ease-out 900ms both; background: var(--color-accent-2-200); border-radius: 18px 18px 5px 18px; padding: 11px 13px; align-self: flex-end; max-width: 86%; box-shadow: var(--shadow-sm);">
+                <div style="font-size: 14.5px; line-height: 1.5;">me lembra de comprar leite quando eu sair do trabalho</div>
+                <div style="font-size: 10.5px; color: var(--color-accent-2-600); text-align: right; margin-top: 4px;">7:04 ✓✓</div>
+              </div>
+              <div class="plim-bubble" style="animation: plimUp 520ms ease-out 1800ms both; background: var(--color-bg); border-radius: 18px 18px 18px 5px; padding: 11px 13px; align-self: flex-start; max-width: 76%; box-shadow: var(--shadow-sm);">
+                <div style="font-size: 14.5px; line-height: 1.5;">Anotado 💛 Te chamo às 18h.</div>
+                <div style="font-size: 10.5px; color: var(--color-neutral-600); text-align: right; margin-top: 4px;">7:04</div>
+              </div>
+            </div>
+
+            <div style="padding: 10px 12px 16px; display: flex; align-items: center; gap: 8px; background: var(--color-neutral-200); border-top: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);">
+              <div style="flex: 1; background: var(--color-bg); border: 1px solid var(--color-divider); border-radius: 999px; padding: 10px 14px; font-size: 14px; color: var(--color-neutral-600);">Mensagem</div>
+              <div style="flex: none; width: 38px; height: 38px; border-radius: 999px; background: var(--color-accent); display: grid; place-items: center; color: var(--color-text); font-size: 15px;">➤</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width: 1120px; margin: 0 auto; padding: 56px 20px;">
+      <h2 style="font-family: 'Caprasimo', serif; font-weight: 400; font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0 0 32px;">Como funciona</h2>
+      <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px;">
+        <li style="display: flex; gap: 16px; align-items: flex-start;">
+          <span style="flex: none; width: 44px; height: 44px; border-radius: 999px; background: var(--color-surface); display: grid; place-items: center; font-family: 'Caprasimo', serif; font-size: 20px;">1</span>
+          <div><h3 style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 19px; margin: 8px 0 6px;">Você manda um oi.</h3><p style="margin: 0; color: var(--color-neutral-700);">No WhatsApp mesmo, como você fala com qualquer pessoa.</p></div>
+        </li>
+        <li style="display: flex; gap: 16px; align-items: flex-start;">
+          <span style="flex: none; width: 44px; height: 44px; border-radius: 999px; background: var(--color-surface); display: grid; place-items: center; font-family: 'Caprasimo', serif; font-size: 20px;">2</span>
+          <div><h3 style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 19px; margin: 8px 0 6px;">Conta o básico.</h3><p style="margin: 0; color: var(--color-neutral-700);">Seu nome e sua cidade — a cidade é o que libera a previsão do tempo.</p></div>
+        </li>
+        <li style="display: flex; gap: 16px; align-items: flex-start;">
+          <span style="flex: none; width: 44px; height: 44px; border-radius: 999px; background: var(--color-surface); display: grid; place-items: center; font-family: 'Caprasimo', serif; font-size: 20px;">3</span>
+          <div><h3 style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 19px; margin: 8px 0 6px;">Recebe seu resumo toda manhã.</h3><p style="margin: 0; color: var(--color-neutral-700);">E daí é só ir pedindo o que precisar, com suas palavras.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <section style="background: var(--color-surface)33; border-top: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);">
+      <div style="max-width: 1120px; margin: 0 auto; padding: 56px 20px;">
+        <h2 style="font-family: 'Caprasimo', serif; font-weight: 400; font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0 0 12px;">O que a Plim faz</h2>
+        <p style="margin: 0 0 36px; color: var(--color-neutral-600); max-width: 30em;">Você pede com suas palavras. Não tem comando pra aprender.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(268px, 1fr)); gap: 28px 40px;">
+          <div style="border-top: 2px solid var(--color-accent-2); padding-top: 14px;">
+            <h3 style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 19px; margin: 0 0 6px;">Resumo do dia</h3>
+            <p style="margin: 0; color: var(--color-neutral-700);">Agenda, tempo e lembretes, toda manhã no horário que você escolher.</p>
+          </div>
+          <div style="border-top: 2px solid var(--color-accent-2); padding-top: 14px;">
+            <h3 style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 19px; margin: 0 0 6px;">Lembretes</h3>
+            <p style="margin: 0; color: var(--color-neutral-700);"><em>“me lembra de tomar o remédio às 9h”</em></p>
+          </div>
+          <div style="border-top: 2px solid var(--color-accent-2); padding-top: 14px;">
+            <h3 style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 19px; margin: 0 0 6px;">Agenda</h3>
+            <p style="margin: 0; color: var(--color-neutral-700);"><em>“marca dentista terça 15h”</em> — se você conectar sua Google Agenda.</p>
+          </div>
+          <div style="border-top: 2px solid var(--color-accent-2); padding-top: 14px;">
+            <h3 style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 19px; margin: 0 0 6px;">Listas e cardápio</h3>
+            <p style="margin: 0; color: var(--color-neutral-700);"><em>“adiciona leite na lista do mercado”</em></p>
+          </div>
+          <div style="border-top: 2px solid var(--color-accent-2); padding-top: 14px;">
+            <h3 style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 19px; margin: 0 0 6px;">Contas e gastos</h3>
+            <p style="margin: 0; color: var(--color-neutral-700);"><em>“paguei 180 de luz hoje”</em></p>
+          </div>
+          <div style="border-top: 2px solid var(--color-accent-2); padding-top: 14px;">
+            <h3 style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 19px; margin: 0 0 6px;">Metas de dinheiro</h3>
+            <p style="margin: 0; color: var(--color-neutral-700);"><em>“quero gastar no máximo 800 no mercado esse mês”</em></p>
+          </div>
+          <div style="border-top: 2px solid var(--color-accent-2); padding-top: 14px;">
+            <h3 style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 19px; margin: 0 0 6px;">Recados</h3>
+            <p style="margin: 0; color: var(--color-neutral-700);">Ela escreve o recado, quem envia é você, do seu WhatsApp.</p>
+          </div>
+          <div style="border-top: 2px solid var(--color-accent-2); padding-top: 14px;">
+            <h3 style="font-family: 'Figtree', sans-serif; font-weight: 700; font-size: 19px; margin: 0 0 6px;">Ciclo menstrual</h3>
+            <p style="margin: 0; color: var(--color-neutral-700);">Se você quiser registrar. É anotação sua — não é diagnóstico nem método contraceptivo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="agenda" style="max-width: 1120px; margin: 0 auto; padding: 64px 20px;">
+      <h2 style="font-family: 'Caprasimo', serif; font-weight: 400; font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0 0 18px; max-width: 24em;">Você escolhe o quanto eu vejo da sua agenda.</h2>
+      <p style="margin: 0 0 14px; max-width: 34em; font-size: 18.5px;">Pra montar seu resumo da manhã, a Plim precisa enxergar seus compromissos do Google Agenda. Você decide o nível de acesso quando conecta — e pode mudar ou desconectar quando quiser.</p>
+      <p style="margin: 0 0 36px; max-width: 34em; color: var(--color-neutral-600);">A conexão acontece dentro da conversa no WhatsApp, com autorização pelo próprio Google. A Plim não guarda uma cópia da sua agenda: ela lê ao vivo, na hora em que você pergunta.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(272px, 1fr)); gap: 20px;">
+        <div class="card elev-sm" style="background: var(--color-neutral-100); padding: var(--space-6);">
+          <h3 class="card-title" style="font-size: 24px; margin: 0 0 var(--space-2);">Só ler</h3>
+          <p style="margin: 0; color: var(--color-neutral-700);">A Plim lê seus compromissos pra montar o resumo. Não cria, não altera, não apaga nada.</p>
+        </div>
+        <div class="card elev-sm" style="background: var(--color-neutral-100); padding: var(--space-6);">
+          <h3 class="card-title" style="font-size: 24px; margin: 0 0 var(--space-2);">Anotar por você</h3>
+          <p style="margin: 0; color: var(--color-neutral-700);">A Plim marca compromissos quando você pede e mexe <strong>só nos que ela mesma criou</strong>. Nos seus outros compromissos ela não encosta.</p>
+        </div>
+        <div class="card elev-sm" style="background: var(--color-neutral-100); padding: var(--space-6);">
+          <h3 class="card-title" style="font-size: 24px; margin: 0 0 var(--space-2);">Cuidar junto</h3>
+          <p style="margin: 0; color: var(--color-neutral-700);">A Plim pode marcar, mudar e desmarcar qualquer compromisso, sempre a seu pedido.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 32px; border-left: 2px solid var(--color-accent-2); padding: 4px 0 4px 20px; max-width: 40em;">
+        <p style="margin: 0; font-size: 18.5px;">O que a Plim faz com esses dados: usa pra montar seu resumo e cumprir o que você pediu. Só isso. Não vendemos nem compartilhamos seus dados com terceiros, e não usamos suas informações do Google para treinar modelos de inteligência artificial.</p>
+      </div>
+
+      <div style="margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center;">
+        <a class="btn btn-secondary" href="./privacidade.html" style="min-height: 44px; padding-inline: var(--space-4); font-size: 15px;">Ler a política de privacidade</a>
+        <a href="#desconectar" style="color: var(--color-accent-700); font-weight: 600;">Como desconectar</a>
+      </div>
+    </section>
+
+    <section id="desconectar" style="background: var(--color-text); color: var(--color-bg);">
+      <div style="max-width: 1120px; margin: 0 auto; padding: 60px 20px;">
+        <h2 style="font-family: 'Caprasimo', serif; font-weight: 400; font-size: clamp(26px, 5.5vw, 36px); line-height: 1.12; margin: 0 0 20px; max-width: 22em;">Privacidade em português claro</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; max-width: 980px;">
+          <p style="margin: 0; color: var(--color-neutral-200); font-size: 18px;"><strong style="color: var(--color-bg);">O que fica guardado:</strong> o que você pede pra Plim guardar — lembretes, listas, contas, preferências — e o histórico da conversa. Da sua agenda, só a autorização criptografada, nunca uma cópia dos seus compromissos.</p>
+          <p style="margin: 0; color: var(--color-neutral-200); font-size: 18px;"><strong style="color: var(--color-bg);">Por quanto tempo:</strong> enquanto você usa a Plim. É essa memória que evita você repetir tudo todo dia.</p>
+          <p style="margin: 0; color: var(--color-neutral-200); font-size: 18px;"><strong style="color: var(--color-bg);">Como apagar:</strong> peça “apaga tudo” na conversa. A conta sai do banco e a autorização da agenda é revogada no mesmo processo. Pra só desconectar a agenda, diga “desconecta minha agenda”.</p>
+        </div>
+        <div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px 24px;">
+          <a href="./privacidade.html" style="color: var(--color-accent); font-weight: 600;">Política de privacidade completa</a>
+          <a href="./termos.html" style="color: var(--color-accent); font-weight: 600;">Termos de uso</a>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width: 760px; margin: 0 auto; padding: 64px 20px;">
+      <h2 style="font-family: 'Caprasimo', serif; font-weight: 400; font-size: clamp(28px, 6vw, 40px); line-height: 1.1; margin: 0 0 28px;">Perguntas frequentes</h2>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <details style="border-bottom: 1px solid color-mix(in srgb, var(--color-text) 14%, transparent);">
+          <summary style="cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: center; min-height: 56px; font-weight: 600; font-size: 18.5px;">Preciso baixar algum aplicativo?<span class="plim-chev" style="transition: transform 180ms; color: var(--color-neutral-600);">⌄</span></summary>
+          <p style="margin: 0 0 18px; color: var(--color-neutral-700);">Não. A Plim vive no WhatsApp que você já tem. Não existe app da Plim pra instalar nem senha pra criar.</p>
+        </details>
+        <details style="border-bottom: 1px solid color-mix(in srgb, var(--color-text) 14%, transparent);">
+          <summary style="cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: center; min-height: 56px; font-weight: 600; font-size: 18.5px;">Quanto custa?<span class="plim-chev" style="transition: transform 180ms; color: var(--color-neutral-600);">⌄</span></summary>
+          <p style="margin: 0 0 18px; color: var(--color-neutral-700);">Hoje é gratuito. Se um dia passarmos a cobrar, avisamos antes e você pode encerrar a conta sem nenhuma cobrança.</p>
+        </details>
+        <details style="border-bottom: 1px solid color-mix(in srgb, var(--color-text) 14%, transparent);">
+          <summary style="cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: center; min-height: 56px; font-weight: 600; font-size: 18.5px;">A Plim lê minhas outras conversas do WhatsApp?<span class="plim-chev" style="transition: transform 180ms; color: var(--color-neutral-600);">⌄</span></summary>
+          <p style="margin: 0 0 18px; color: var(--color-neutral-700);">Não. Ela só vê o que você escreve pra ela, na conversa de vocês duas.</p>
+        </details>
+        <details style="border-bottom: 1px solid color-mix(in srgb, var(--color-text) 14%, transparent);">
+          <summary style="cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: center; min-height: 56px; font-weight: 600; font-size: 18.5px;">Como eu conecto minha agenda do Google?<span class="plim-chev" style="transition: transform 180ms; color: var(--color-neutral-600);">⌄</span></summary>
+          <p style="margin: 0 0 18px; color: var(--color-neutral-700);">Pela conversa. Você pede pra conectar, a Plim manda um link do próprio Google, você escolhe o nível de acesso e autoriza. Nada disso acontece aqui no site.</p>
+        </details>
+        <details style="border-bottom: 1px solid color-mix(in srgb, var(--color-text) 14%, transparent);">
+          <summary style="cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: center; min-height: 56px; font-weight: 600; font-size: 18.5px;">E se eu quiser parar de usar?<span class="plim-chev" style="transition: transform 180ms; color: var(--color-neutral-600);">⌄</span></summary>
+          <p style="margin: 0 0 18px; color: var(--color-neutral-700);">Diga “apaga tudo” na conversa, a qualquer momento e sem justificativa. Seus dados são apagados e a autorização da agenda é revogada junto.</p>
+        </details>
+        <details style="border-bottom: 1px solid color-mix(in srgb, var(--color-text) 14%, transparent);">
+          <summary style="cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: center; min-height: 56px; font-weight: 600; font-size: 18.5px;">Tem uma pessoa lendo minhas mensagens?<span class="plim-chev" style="transition: transform 180ms; color: var(--color-neutral-600);">⌄</span></summary>
+          <p style="margin: 0 0 18px; color: var(--color-neutral-700);">As respostas da Plim são geradas por modelos de linguagem. Ninguém do time fica lendo suas conversas; o acesso técnico existe só pra corrigir erros e está descrito na política de privacidade.</p>
+        </details>
+      </div>
+    </section>
+
+    <section style="background: var(--color-surface);">
+      <div style="max-width: 1120px; margin: 0 auto; padding: 64px 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 20px;">
+        <h2 style="font-family: 'Caprasimo', serif; font-weight: 400; font-size: clamp(28px, 6vw, 44px); line-height: 1.08; margin: 0; max-width: 20em;">Manda um oi. A Plim responde.</h2>
+        <a class="btn btn-primary" href="{{ waLink }}" target="_blank" rel="noopener" style="min-height: 52px; padding-inline: var(--space-6); font-size: 18px;">Conversar com a Plim</a>
+      </div>
+    </section>
+  </main>
+
+  <footer style="border-top: 1px solid var(--color-divider);">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 44px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px;">
+      <div>
+        <div style="font-family: 'Caprasimo', serif; font-size: 24px; margin-bottom: 8px;">plim</div>
+        <p style="margin: 0; color: var(--color-neutral-600); max-width: 26em;">Uma assistente pessoal que conversa com você no WhatsApp e organiza sua rotina.</p>
+      </div>
+      <nav style="display: flex; flex-direction: column; gap: 10px; align-items: flex-start;">
+        <a href="./privacidade.html" style="font-weight: 600;">Política de privacidade</a>
+        <a href="./termos.html" style="font-weight: 600;">Termos de uso</a>
+        <a href="mailto:suporte@plimapp.com" style="font-weight: 600;">suporte@plimapp.com</a>
+      </nav>
+      <p style="margin: 0; color: var(--color-neutral-600); font-size: 15px;">FERNANDA E STEPHANIE DESENVOLVIMENTO DE SISTEMAS LTDA - ME<br />CNPJ 64.302.196/0001-51<br />Rua Pais Leme, 215, cj. 1713 — São Paulo/SP</p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+5511942260775&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;WhatsApp&quot;},&quot;mensagemInicial&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;oi Plim&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;WhatsApp&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const num = String(this.props.whatsappNumber ?? "+5511942260775").replace(/[^0-9]/g, "");
+    const msg = encodeURIComponent(this.props.mensagemInicial ?? "oi Plim");
+    return { waLink: "https://wa.me/" + num + "?text=" + msg };
+  }
+}
+</script>
+</body>
+</html>
