@@ -1,4 +1,4 @@
-# Como publicar o site da Plim
+# Como publicar o site da Mila
 
 A pasta `publicar/` já contém o site pronto. Só estes 5 arquivos precisam ir para o servidor:
 
@@ -49,7 +49,7 @@ Envie os 5 arquivos por FTP/SFTP para a pasta pública do domínio (`public_html
    - Política de privacidade: `https://plimapp.com/privacidade.html`
    - Termos de uso: `https://plimapp.com/termos.html`
    As três URLs precisam estar no ar, no mesmo domínio verificado, antes de submeter a revisão.
-3. Teste os botões "Conversar com a Plim" no celular — devem abrir o WhatsApp com a mensagem "oi Plim" preenchida.
+3. Teste os botões "Conversar com a Mila" no celular — devem abrir o WhatsApp com a mensagem "oi Mila" preenchida.
 
 ## Se quiser URLs sem `.html`
 
